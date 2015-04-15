@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>Oliver Phillips - Photography</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	1,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:   800,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														{image : 'photos/1b.jpg', title : '', thumb : 'photos/thumbs/1a.jpg'},
+														{image : 'photos/2b.jpg', title : '', thumb : 'photos/thumbs/2a.jpg'},  
+														{image : 'photos/3b.jpg', title : '', thumb : 'photos/thumbs/3a.jpg'},
+														{image : 'photos/4b.jpg', title : '', thumb : 'photos/thumbs/4a.jpg'},
+														{image : 'photos/5b.jpg', title : '', thumb : 'photos/thumbs/5a.jpg'},
+														{image : 'photos/6b.jpg', title : '', thumb : 'photos/thumbs/6a.jpg'},
+														{image : 'photos/7b.jpg', title : '', thumb : 'photos/thumbs/7a.jpg'},
+														{image : 'photos/8b.jpg', title : '', thumb : 'photos/thumbs/8a.jpg'},
+														{image : 'photos/9b.jpg', title : '', thumb : 'photos/thumbs/9a.jpg'},
+														{image : 'photos/10b.jpg', title : '', thumb : 'photos/thumbs/10a.jpg'},
+														{image : 'photos/11b.jpg', title : '', thumb : 'photos/thumbs/11a.jpg'},  
+														{image : 'photos/12b.jpg', title : '', thumb : 'photos/thumbs/12a.jpg'},
+														{image : 'photos/13b.jpg', title : '', thumb : 'photos/thumbs/13a.jpg'},
+														{image : 'photos/14b.jpg', title : '', thumb : 'photos/thumbs/14a.jpg'},
+														{image : 'photos/15b.jpg', title : '', thumb : 'photos/thumbs/15a.jpg'},
+														{image : 'photos/16b.jpg', title : '', thumb : 'photos/thumbs/16a.jpg'},
+														{image : 'photos/17b.jpg', title : '', thumb : 'photos/thumbs/17a.jpg'},
+														{image : 'photos/18b.jpg', title : '', thumb : 'photos/thumbs/18a.jpg'},
+														{image : 'photos/19b.jpg', title : '', thumb : 'photos/thumbs/19a.jpg'},
+														{image : 'photos/20b.jpg', title : '', thumb : 'photos/thumbs/20a.jpg'}
+												],
+												
+					// Theme Options			   
+					progress_bar			:	0,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+
+		@font-face {
+			font-family: 'Code-light';
+			src: url("fonts/Code-light.otf") format("opentype");
+}
+
+a {text-decoration: none;}
+a:link {color:#fff;}      /* unvisited link */
+a:visited {color:#fff;}  /* visited link */
+a:hover {color:#000; text-decoration: underline;}  /* mouse over link */
+
+
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ 
+				margin:0 0 10px 0; 
+				padding:10px; 
+				display:inline; 
+				float:left; 
+				clear:both; 
+				color:#fff;
+
+				background-color: rgb(0, 0, 0);
+    		/* RGBa with 0.6 opacity */
+    			background-color: rgba(0, 0, 0, 0);
+    		/* For IE 5.5 - 7*/
+    			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    		/* For IE 8*/
+    			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+ 				font:11px Helvetica, Arial, sans-serif; }
+
+			ul#demo-block li a{ color:#eee; font-weight:bold; 
+			}
+			ul#demo-block li .copyright{: 0;
+			}
+
+
+	</style>
+
+<body>
+
+	<!--Demo styles (you can delete this block)-->
+	
+	<ul id="demo-block">
+		
+		<li>
+		<p style="
+			font-family: 'Code-light', serif;
+			font-size: 50px;
+			color: white;
+		">OLIVER PHILLIPS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><hr/></li>
+		
+
+		<li><p style="
+			font-family: 'Code-light', serif;
+			font-size: 17px;
+			color: white;
+			margin-top:-20px;
+		"><a href="mailto:olliephillips12@hotmail.co.uk">Email</a> // <a href="">Blog</a> // <a href="http://www.flickr.com/photos/78636792@N04/">Flickr</a></li>
+
+	
+
+	</ul>
+
+	<div style="position:fixed; width:100%; height:70px; padding:20px; bottom:0px; color:white; font-family:'Code-light', helvetica, serif; font-size:13px;">
+            Copyright <span style="font-size:14px;">&#169;</span> 2013
+        </div>
+	
+	<!--End of styles-->
+
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+
+</body>
+</html>
